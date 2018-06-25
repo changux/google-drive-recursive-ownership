@@ -14,6 +14,7 @@ NOTE: The Google Drive API does not allow suppressing notifications for change o
 
     git clone https://github.com/davidstrauss/google-drive-recursive-ownership
     pip install --upgrade google-api-python-client
+    pip install nose tornado
 
 ### Usage
 
