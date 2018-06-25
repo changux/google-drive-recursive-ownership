@@ -14,7 +14,7 @@ NOTE: The Google Drive API does not allow suppressing notifications for change o
 
     git clone https://github.com/davidstrauss/google-drive-recursive-ownership
     pip install --upgrade google-api-python-client
-    pip install nose tornado
+    pip install nose tornado oauth2client 
 
 ### Usage
 
@@ -32,3 +32,11 @@ Windows Example:
 Mac/Linux Example:
 
     python transfer.py "Folder 1/Folder 2/Folder 3" new_owner@example.com false
+
+### Create clients_secret.josn
+
+If you go to your Google developers console you should see a section titled OAuth 2.0 client IDs. Click on an entry in that list, and you will see a number of fields, including Client secret.
+
+If you have not yet created credentials, click the Create credentials button, and follow the instructions to create new credentials, and then follow the steps outlined above to find the Client secret.
+
+`Credentials --> OAuth Client ID --> Other --> "Name it" --> Download JSON.` 
